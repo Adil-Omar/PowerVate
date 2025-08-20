@@ -25,7 +25,9 @@ export default function Community() {
                     </div>
 
                 </div>
-                    <p className='text-[#E2F163] tex-xl font-light' >Lorem ipsum dolor sit amet consectetur. Tortor aenean suspendisse pretium nunc non facilisi.</p>
+                    <p className='text-[#E2F163] tex-xl font-light' >I love the short guided sessions — they fit my mornings perfectly.
+            The tailored progressions helped me move from beginner to confident
+            in just a few months.</p>
                     <div className='flex justify-between items-center w-full' >
                         <div className='flex items-center justify-start gap-3' >
                             <img src="/Star.png" alt="" />
@@ -48,26 +50,28 @@ export default function Community() {
                     <div className='flex items-center justify-center gap-3' >
 
                         <img src="/Profile Picture.png" alt="" />
-                        <h1 className='text-xl text-[#E2F163]' >Madison</h1>
+                        <h1 className='text-xl text-[#E2F163]' >Jesika</h1>
                     </div>
                     <div>
                         <img src="/Stars Altern.png" alt="" />
                     </div>
 
                 </div>
-                    <p className='text-[#E2F163] tex-xl font-light' >Lorem ipsum dolor sit amet consectetur. Tortor aenean suspendisse pretium nunc non facilisi.</p>
+                    <p className='text-[#E2F163] tex-xl font-light' >The tracking and weekly summaries keep me honest — and the forum
+            tips helped me fix form and add better recovery days. Highly
+            recommend for consistent results.</p>
                     <div className='flex justify-between items-center w-full' >
                         <div className='flex items-center justify-start gap-3' >
                             <img src="/Star.png" alt="" />
-                            <p className='text-base font-light text-[#E2F163]' >30,254</p>
+                            <p className='text-base font-light text-[#E2F163]' >21,364</p>
                         </div>
                         <div className='flex items-center justify-start gap-3' >
                             <img src="/Vector (1).png" alt="" />
-                            <p className='text-base font-light text-[#E2F163]' >30,254</p>
+                            <p className='text-base font-light text-[#E2F163]' >12,781</p>
                         </div>
                         <div className='flex items-center justify-start gap-3' >
                             <img src="/Vector (2).png" alt="" />
-                            <p className='text-base font-light text-[#E2F163]' >30,254</p>
+                            <p className='text-base font-light text-[#E2F163]' >17,234</p>
                         </div>
 
                     </div>
