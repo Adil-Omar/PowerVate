@@ -12,7 +12,7 @@ export default function Community() {
                 <button className='bg-[#896CFE] hover:bg-[#fbc03f] hover:text-black max-md:text-sm transition-all duration-200 w-36 md:w-40 h-12 rounded-[30px]' >View All Forum</button>
             </div>
         </div>
-        <div className='md:grid flex flex-col items-center justify-items-center md:grid-cols-2  py-8' >
+        <div className='md:grid flex flex-col items-center justify-items-center md:grid-cols-2 max-md:gap-8 py-8' >
             <div className='max-w-[570px] flex flex-col justify-between items-center border -2 border-[#E2F163] rounded-[18px] h-[240px] p-5' >
                 <div className='flex justify-between items-center w-full' >
                     <div className='flex items-center justify-center gap-3' >

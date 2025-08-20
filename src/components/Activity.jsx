@@ -11,12 +11,12 @@ export default function Activity() {
           <span className="text-[#896CFE] pb-4">Our Featured</span> Workout
         </h1>
       </div>
-      <div className="grid grid-cols-1 place-items-center md:grid-cols-2   py-8" >
+      <div className="grid grid-cols-1 place-items-center md:grid-cols-2 max-md:gap-8   py-8" >
         <img src="/Group 298 (3).png" className="rounded-[30px]" alt="" />
         <img src="/Group 298 (3).png" className="rounded-[30px]" alt="" />
 
       </div>
-      <div className="md:grid flex flex-col items-center grid-cols-1 md:grid-cols-3 justify-items-center py-8" >
+      <div className="md:grid flex flex-col items-center grid-cols-1 md:grid-cols-3 max-md:gap-8 justify-items-center py-8" >
         <img  src="/Group 293.png" alt="" />
         <img src="/Group 293.png" alt="" />
         <img src="/Group 294.png" alt="" />
