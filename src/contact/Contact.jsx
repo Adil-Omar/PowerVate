@@ -26,7 +26,7 @@ export default function Contact() {
 
   return (
     <div>
-      <div id="contact" className="MyContainer py-12">
+      <div id="contact" className="MyContainer py-12 lg:pt-20">
         <div className="max-w-5xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 items-start">
           {/* Left: heading + contact info */}
           <div className="flex flex-col justify-center">
