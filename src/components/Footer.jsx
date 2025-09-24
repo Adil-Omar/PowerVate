@@ -56,7 +56,7 @@ export default function Footer() {
             </div>
           </div>
         </div>
-        <div className="bg-[#2B2B2B] pt-52">
+        <div className="bg-[#2B2B2B] pt-52 pb-12">
           <div className="grid grid-cols-1 max-sm:px-10  MyContainer sm:grid-cols-2  lg:grid-cols-4 gap-12">
             <div className="flex flex-col lg:pr-10 justify-start items-start gap-12">
               <img src="/Layer_1.png" alt="" />
