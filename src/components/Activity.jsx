@@ -17,10 +17,15 @@ export default function Activity() {
 
       </div>
       <div className="md:grid flex flex-col items-center grid-cols-1 md:grid-cols-3 max-md:gap-8 justify-items-center py-8" >
-        <img  src="/Group 293.png" alt="" />
+        <img  src="/exer1.png" alt="" />
         <img src="/Group 293.png" alt="" />
         <img src="/Group 294.png" alt="" />
       </div>
+      <div className="md:grid flex flex-col items-center grid-cols-1 md:grid-cols-2 max-md:gap-8 justify-items-center py-8" >
+        <img  src="/exer2.png" alt="" />
+        <img  src="/exer3.png" alt="" />
+      </div>
+      
     </div>
   );
 }

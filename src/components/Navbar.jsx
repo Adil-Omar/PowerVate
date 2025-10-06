@@ -1,6 +1,7 @@
 import React, { useState, useRef, useEffect } from "react";
 import { animate } from "framer-motion";
 import { Mail } from "lucide-react";
+import Popup from "./Popup";
 
 export default function Navbar() {
   const navLinks = [
@@ -11,6 +12,7 @@ export default function Navbar() {
     { name: "Testimonial", link: "testi" },
     { name: "Blog", link: "blog" },
   ];
+  const [popup, setPopup] = useState(false);
 
   const [open, setOpen] = useState(false);
   const panelRef = useRef(null);
@@ -93,8 +95,8 @@ export default function Navbar() {
             );
           })}
           <div>
-            <button className="w-32 h-10 rounded-[30px] bg-[#896CFE] hover:bg-[#6b48f8] transition-all duration-200">
-              Get The App
+            <button onClick={() => setPopup(true)} className="w-32 h-10 rounded-[30px] bg-[#896CFE] hover:bg-[#6b48f8] transition-all duration-200">
+              Book a demo
             </button>
           </div>
         </div>
@@ -149,22 +151,15 @@ export default function Navbar() {
               </a>
             ))}
 
-            <button
+            <button onClick={() => setPopup(true)}
               className="w-full h-10 rounded-[30px] hover:bg-[#6b48f8] transition-all duration-200 bg-[#896CFE] mt-2"
-              onClick={() => {
-                // example: scroll to top (home)
-                const el = document.getElementById("home");
-                if (el) {
-                  handleLinkClick(new Event("click"), "home");
-                }
-                setOpen(false);
-              }}
             >
-              Get The App
+              Book a demo
             </button>
           </nav>
         </div>
       </div>
+          {popup && <Popup setPopup={setPopup} />}
     </div>
   );
 }

@@ -17,9 +17,9 @@ export default function Nutrition() {
 
       </div>
       <div className="md:grid flex flex-col items-center grid-cols-1 md:grid-cols-3 max-md:gap-8 justify-items-center py-8" >
-        <img  src="/Group 293.png" alt="" />
-        <img src="/Group 293.png" alt="" />
-        <img src="/Group 294.png" alt="" />
+        <img  src="/nut1.png" alt="" />
+        <img src="/nut2.png" alt="" />
+        <img src="/nut3.png" alt="" />
       </div>
     </div>
   );

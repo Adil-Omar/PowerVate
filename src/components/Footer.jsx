@@ -16,12 +16,20 @@ export default function Footer() {
                   Download The App Now
                 </h1>
                 <p className="text-xs sm:text-sm lg:text-base leading-relaxed font-light">
-                  Get guided workouts, personalized plans, and real progress tracking — all
-    tailored to your schedule. Start short, effective sessions today and see
-    measurable results in weeks.{" "}
+                  Get guided workouts, personalized plans, and real progress
+                  tracking — all tailored to your schedule. Start short,
+                  effective sessions today and see measurable results in weeks.{" "}
                 </p>
                 <div className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-3 md:gap-5 pt-8 sm:pt-10">
-                  <div className="w-full max-w-[200px] sm:w-40 md:w-52 h-14 sm:h-16 bg-[#2B2B2B] rounded-[10px] flex items-center justify-center gap-2 md:gap-3">
+                  <div
+                    onClick={() => {
+                      window.open(
+                        "https://apps.apple.com/pk/app/powervatefitness/id6751278357",
+                        "_blank"
+                      );
+                    }}
+                    className="w-full max-w-[200px] cursor-pointer hover:bg-slate-800 sm:w-40 md:w-52 h-14 sm:h-16 bg-[#2B2B2B] rounded-[10px] flex items-center justify-center gap-2 md:gap-3"
+                  >
                     <img
                       src="/Group.png"
                       alt=""
@@ -36,7 +44,15 @@ export default function Footer() {
                       </h1>
                     </div>
                   </div>
-                  <div className="w-full max-w-[200px] sm:w-40 md:w-52 h-14 sm:h-16 bg-[#2B2B2B] rounded-[10px] flex items-center justify-center gap-2 md:gap-3">
+                  <div
+                    onClick={() => {
+                      window.open(
+                        "https://apps.apple.com/pk/app/powervatefitness/id6751278357",
+                        "_blank"
+                      );
+                    }}
+                    className="w-full cursor-pointer hover:bg-slate-800 max-w-[200px] sm:w-40 md:w-52 h-14 sm:h-16 bg-[#2B2B2B] rounded-[10px] flex items-center justify-center gap-2 md:gap-3"
+                  >
                     <img
                       src="/APPLE LOGO.png"
                       alt=""
@@ -74,20 +90,47 @@ export default function Footer() {
             <div className="flex flex-col lg:pl-14 justify-start items-start gap-7">
               <h1 className="text-[#896CFE] text-xl">COMPANY</h1>
               <div className="flex flex-col gap-3">
-                <a href="#home" className="hover:text-[#896CFE] cursor-pointer" >Home</a>
-                <a href="#features" className="hover:text-[#896CFE] cursor-pointer">Features</a>
-                <a href="#demo" className="hover:text-[#896CFE] cursor-pointer">How it Works</a>
-                <a href="#about" className="hover:text-[#896CFE] cursor-pointer">About Us</a>
-                <a href="#testi" className="hover:text-[#896CFE] cursor-pointer">Testiminial</a>
+                <a href="#home" className="hover:text-[#896CFE] cursor-pointer">
+                  Home
+                </a>
+                <a
+                  href="#features"
+                  className="hover:text-[#896CFE] cursor-pointer"
+                >
+                  Features
+                </a>
+                <a href="#demo" className="hover:text-[#896CFE] cursor-pointer">
+                  How it Works
+                </a>
+                <a
+                  href="#about"
+                  className="hover:text-[#896CFE] cursor-pointer"
+                >
+                  About Us
+                </a>
+                <a
+                  href="#testi"
+                  className="hover:text-[#896CFE] cursor-pointer"
+                >
+                  Testiminial
+                </a>
               </div>
             </div>
             <div className="flex flex-col lg:pl-8 justify-start items-start gap-7">
               <h1 className="text-[#896CFE] text-xl">Help</h1>
               <div className="flex flex-col gap-3">
-                <p className="hover:text-[#896CFE] cursor-pointer">Customer Support</p>
-                <p className="hover:text-[#896CFE] cursor-pointer">Delivery Details</p>
-                <p className="hover:text-[#896CFE] cursor-pointer">Terms & Conditions</p>
-                <p className="hover:text-[#896CFE] cursor-pointer">Privacy Policy</p>
+                <p className="hover:text-[#896CFE] cursor-pointer">
+                  Customer Support
+                </p>
+                <p className="hover:text-[#896CFE] cursor-pointer">
+                  Delivery Details
+                </p>
+                <p className="hover:text-[#896CFE] cursor-pointer">
+                  Terms & Conditions
+                </p>
+                <p className="hover:text-[#896CFE] cursor-pointer">
+                  Privacy Policy
+                </p>
               </div>
             </div>
 
