@@ -77,8 +77,8 @@ const Pricing = () => {
               <button
                 className={`w-full py-3 rounded-full font-bold ${
                   plan.popular
-                    ? "bg-[#2B2B2B] hover:bg-slate-800 "
-                    : "bg-[#2B2B2B] hover:bg-slate-800 "
+                    ? "bg-[#2B2B2B] hover:bg-slate-800  "
+                    : "bg-[#2B2B2B] hover:bg-slate-800  "
                 }`}
               >
                 Choose Plan
