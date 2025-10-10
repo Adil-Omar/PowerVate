@@ -1,16 +1,48 @@
-import React from "react";
+"use client";
+
+import { collection, getDocs, orderBy, query } from "firebase/firestore";
+import React, { useEffect, useState } from "react";
+import { db } from "../services/firebase";
 
 const Pricing = () => {
-  const plans = [
-    { duration: "1 Month", price: 149, custom: 49 },
-    { duration: "3 Months", price: 350, custom: 49, popular: true },
-    { duration: "6 Months", price: 600, custom: 49 },
-    { duration: "1 Year", price: 850, custom: 49 },
-  ];
+  const [plans, setPlans] = useState([]);
+  const [loading, setLoading] = useState(true);
+
+  const fetchPlans = async () => {
+    try {
+      const q = query(
+        collection(db, "pricingPlans"),
+        orderBy("planNumber", "asc")
+      );
+      const snapshot = await getDocs(q);
+      const fetchPlans = snapshot.docs.map((doc) => ({
+        id: doc.id,
+        ...doc.data(),
+      }));
+      setPlans(fetchPlans);
+    } catch (error) {
+      console.error("Error fetching Plans:", error);
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  useEffect(() => {
+    fetchPlans();
+  }, []);
+
+  if (loading) return <p className="text-center mt-10">Loading plans...</p>;
+
+  // const plans = [
+  //   { duration: "1 Month", price: 149, custom: 49 },
+  //   { duration: "3 Months", price: 350, custom: 49, popular: true },
+  //   { duration: "6 Months", price: 600, custom: 49 },
+  //   { duration: "1 Year", price: 850, custom: 49 },
+  // ];
 
   return (
     <div id="pricing" className="MyContainer">
-      <div className="w-full py-20 flex flex-col items-center gap-3">
+      <div className="w-full py-20 flex flex-col items-center justify-center gap-3">
         <h1 className="text-3xl md:text-4xl text-[#896CFE] font-bold uppercase font-poppins tracking-widest">
           <span className="text-[#E2F163]">-</span> Let's Workout
         </h1>
@@ -18,7 +50,7 @@ const Pricing = () => {
           Choose your Plans
         </h3>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 w-full mt-10 px-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 justify-center w-full mt-10 px-4">
           {plans.map((plan, i) => (
             <div
               key={i}
@@ -69,7 +101,9 @@ const Pricing = () => {
                   <span className="text-black">✓</span>
                   <span className="text-white text-sm">
                     Custom products{" "}
-                    <span className="text-[#E2F163]">+${plan.custom}</span>
+                    <span className="text-[#E2F163]">
+                      +${plan.customProducts}
+                    </span>
                   </span>
                 </div>
               </div>
