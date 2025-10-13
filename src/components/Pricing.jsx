@@ -43,14 +43,14 @@ const Pricing = () => {
   return (
     <div id="pricing" className="MyContainer">
       <div className="w-full py-20 flex flex-col items-center justify-center gap-3">
-        <h1 className="text-3xl md:text-4xl text-[#896CFE] font-bold uppercase font-poppins tracking-widest">
+        <h1 className="lg:text-2xl text-lg md:text-4xl text-[#896CFE] font-medium uppercase font-poppins ">
           <span className="text-[#E2F163]">-</span> Let's Workout
         </h1>
-        <h3 className="text-xl md:text-2xl font-bold uppercase font-poppins tracking-widest">
+        <h3 className="text-xl md:text-2xl font-medium uppercase font-poppins ">
           Choose your Plans
         </h3>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 justify-center w-full mt-10 px-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 justify-center w-full mt-10 px-0 lg:px-4">
           {plans.map((plan, i) => (
             <div
               key={i}
