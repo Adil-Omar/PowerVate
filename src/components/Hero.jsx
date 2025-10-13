@@ -30,7 +30,7 @@ export default function Hero() {
               and on track toward your health goals
             </p>
 
-            <div className="flex items-center justify-center md:gap-5 gap-3  pt-10">
+            <div className="flex flex-col md:flex-row items-center justify-center md:gap-5 gap-3  pt-10">
               <div
                 onClick={() => {
                   window.open(
